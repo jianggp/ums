@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+    <classPathEntry
+            location="D:\apache-maven-3.3.9\repository\mysql\mysql-connector-java\5.1.35\mysql-connector-java-5.1.35.jar"/>
+    <context id="context1">
+        <plugin type="org.mybatis.generator.plugins.PaginationPlugin"></plugin>
+        <plugin type="org.mybatis.generator.plugins.AutoIncIdPlugin"></plugin>
+
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/mysql_new_pys"
+                        userId="root" password="password"/>
+        <javaModelGenerator targetPackage="com.ums.core.model" targetProject="core/src/main/java"/>
+        <sqlMapGenerator targetPackage="das" targetProject="core/src/main/resources"/>
+        <javaClientGenerator targetPackage="com.ums.core.dao" targetProject="core/src/main/java" type="XMLMAPPER"/>
+
+        <table tableName="payment_channel"></table>
+        <!--<table tableName="payment_channel_config"></table>-->
+        <!--<table tableName="payment_merge_config"></table>-->
+        <!--<table tableName="payment_request"></table>-->
+        <!--<table tableName="payment_request_detail"></table>-->
+        <!--<table tableName="payment_transaction"></table>-->
+        <!--<table tableName="payment_transaction_record"></table>-->
+        <!--<table tableName="task_queue"></table>-->
+        <!--<table tableName="trust_payment_channel"></table>-->
+        <!--<table tableName="trust_payment_limit"></table>-->
+        <!--<table tableName="trust_payment_limit_balance"></table>-->
+        <!--<table tableName="trust_payment_type"></table>-->
+        <!--<table tableName="validate_result"></table>-->
+        <!--<table tableName="trust_payment_channel_capability"></table>-->
+    </context>
+</generatorConfiguration>

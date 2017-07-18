@@ -1,0 +1,27 @@
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+
+# Intellij project files
+*.iml
+.idea/
+
+# Others
+target/
+logs/
+tmp/
+mybatis-generator-shell/
+
+
+*.log
+*.DS_Store
+
+.idea/
+*.iml
+**/node_modules/
+index.js
+index.js.map
+index.css
+index.css.map
